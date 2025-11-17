@@ -3,26 +3,26 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
-      title: "Landing Page",
+      title: "ADZHEALTH",
       img: "https://via.placeholder.com/300x180?text=Landing+Page",
       link: "#"
     },
     {
-      title: "Dashboard UI",
+      title: "Manajemen diri",
       img: "https://via.placeholder.com/300x180?text=Dashboard",
       link: "#"
     },
     {
-      title: "Mini E‑Commerce",
+      title: "Portofolio lama",
       img: "https://via.placeholder.com/300x180?text=Ecommerce",
       link: "#"
     }
   ];
 
   return (
-    <section id="projects" className="w-full py-16 bg-white">
+    <section id="projects" className="w-full py-16 bg-white text-[#263238]">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-10">
+        <h2 className="text-2xl font-['Playfair_Display'] font-semibold text-center mb-10">
           Projects
         </h2>
 
@@ -30,7 +30,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="rounded-lg overflow-hidden shadow hover:shadow-lg bg-gray-100 transition"
+              className="rounded-lg overflow-hidden shadow bg-[#B0BEC5] hover:opacity-90 transition"
             >
               <img
                 src={project.img}
@@ -38,12 +38,12 @@ export default function Projects() {
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-lg font-['Playfair_Display'] font-semibold">
                   {project.title}
                 </h3>
                 <a
                   href={project.link}
-                  className="text-cyan-600 text-sm mt-2 inline-block hover:underline"
+                  className="text-sm font-['Lato'] mt-2 inline-block hover:underline"
                 >
                   View Project
                 </a>
